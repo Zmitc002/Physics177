@@ -5,6 +5,8 @@
 # Assignment 1
 # Problem 2
 
+import matplotlib.pyplot as plt
+
 print('\n')
 
 homework = [10, 10, 8, 9.5, 3, 9, 0, 6]
@@ -56,7 +58,6 @@ plt.hist(grades,bins= 8)
 plt.title("Histrograph of Student Grades")
 plt.xlabel("Grades")
 plt.ylabel("Frequency")
-plt.xlim([4, 10])
-plt.show()
+plt.xlim([5, 10])
 plt.savefig('grades_historgraph')
 
