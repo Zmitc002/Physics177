@@ -12,7 +12,7 @@ print('\n')
 
 # Import velocity.txt and designate time and velocity data
 velVStime = np.loadtxt('velocities.txt')
-time = velocityVStime[:, 0]
+time = velVStime[:, 0]
 velocity = velVStime[:, 1]
 
 # Calculate Distance
