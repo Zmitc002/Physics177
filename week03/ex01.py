@@ -26,7 +26,7 @@ for x in range (-50,50):
         float(x)
         float(y)
         
-        data.append(potential(x,y))
+        data.append(potential(y,x))
 
 #Potential Density Plot
 print ("Density Plot for Potential: ")
@@ -54,7 +54,7 @@ for x in range (-50,50):
     for y in range (-50,50):
         float(x)
         float(y)
-        data2.append(electric(x,y))
+        data2.append(electric(y,x))
         
 #Electric Field Density Plot
 print ("Density Plot for Electric Field: ")

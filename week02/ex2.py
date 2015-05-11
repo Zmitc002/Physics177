@@ -24,7 +24,7 @@ np.savetxt('distVStime.txt', zip(time,distance))
 # I found the area of each respective trapezoid and summed them
 
 a = 0
-N = 100
+N = 101
 I = 0
 d = abs(distance)
 for i in range(1,N):
@@ -40,7 +40,7 @@ print('\n')
 #Simpson's Rule
 k = 0.0
 h = 1.
-
+x = 0.
 for i in range(1, N/2 + 1):
     k += 4 * d[i]
     x += 2 * h
