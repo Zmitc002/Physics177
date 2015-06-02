@@ -1,3 +1,10 @@
+# Zachary Mitchell
+# Physics 177
+# Spring 2015
+# University of California Riverside
+# Final Project
+# Diffusion Limited Aggregation on Sides
+
 import numpy as np
 import matplotlib.pyplot as plt
 from random import randrange
@@ -60,8 +67,6 @@ for n in range(1000):
             image[a][b] = 0
             a = a+xmove
             b = b+ymove
-
-
 
         #If there is an adjacent stuck particle this particle also becomes stuck.
         else:
