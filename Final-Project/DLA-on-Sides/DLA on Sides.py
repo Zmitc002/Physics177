@@ -32,7 +32,7 @@ a = 100
 b = 100
 image[a][b] = 1
 
-#Sets initial cell state to not stuck.
+#Sets initial cell state to not stuck
 stuck = False
 
 #Main Sequence
@@ -44,10 +44,10 @@ for n in range(1000):
     a = 50
     b = 50
 
-    #Continues Cycle Until Stuck.
+    #Continues Cycle Until Stuck
     while stuck == False:
 
-        #Sets xmove, ymove to either -1, 0, or 1.
+        #Sets xmove, ymove to either -1, 0, or 1
         xmove =  randrange(1,4)
         ymove = randrange(1,4)
         if xmove == 2:
@@ -59,7 +59,7 @@ for n in range(1000):
         if ymove == 3:
             ymove = 0
 
-        #Keeps moving if there is no adjacent stuck particle.
+        #Keeps moving if there is no adjacent stuck particle
         if image[a+1][b+1] == 0 and image[a+1][b-1] == 0  and image[a-1][b+1] == 0 and image[a-1][b-1] == 0 and \
                         image[a][b+1]==0 and image[a][b-1]==0 and image[a+1][b]==0 and image[a-1][b]==0:
 
@@ -68,7 +68,7 @@ for n in range(1000):
             a = a+xmove
             b = b+ymove
 
-        #If there is an adjacent stuck particle this particle also becomes stuck.
+        #If there is an adjacent stuck particle this particle also becomes stuck
         else:
 
             image[a][b]= 1
