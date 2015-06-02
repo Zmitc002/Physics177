@@ -28,7 +28,7 @@ def dft(y):
     for n in range(N//2+1):
         
         for k in range(N):
-            value[n] += y[k]*np.exp(-2j*np.pi*n*k/N)/10
+            value[n] += y[k]*np.exp(-2j*np.pi*n*k/N)
             
     return value
 
