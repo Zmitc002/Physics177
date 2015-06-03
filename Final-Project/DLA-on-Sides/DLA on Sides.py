@@ -28,8 +28,8 @@ for i in range(0,101):
     image[i][100] = 1
 
 #Initializing Spawning Location
-a = 100
-b = 100
+a = 50
+b = 50
 image[a][b] = 1
 
 #Sets initial cell state to not stuck
